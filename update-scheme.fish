@@ -25,7 +25,7 @@ if test -f $src/schemes/$scheme.css
     cp $src/schemes/$scheme.css $config/gtk-3.0/gtk.css
     cp $src/schemes/$scheme.css $config/gtk-4.0/gtk.css
 
-    # Reload GTK+ theme
+    # Reload GTK+ theme (not working)
     set -l theme (gsettings get org.gnome.desktop.interface gtk-theme)
     gsettings set org.gnome.desktop.interface gtk-theme ''
     sleep .1

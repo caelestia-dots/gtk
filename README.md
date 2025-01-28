@@ -9,7 +9,8 @@ You need to restart the apps to reload the theme (idk why but live reloading doe
 
 ## Installation
 
-Clone this repo to `$XDG_CONFIG_HOME/caelestia/gtk`.
+Install [`caelestia-scripts`](https://github.com/caelestia-dots/scripts.git),
+then run `caelestia install gtk`.
 
 ## Usage
 
