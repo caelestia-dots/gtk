@@ -1,21 +1,5 @@
 #!/bin/fish
 
-function get-theme -a settings_ini
-    if ! test -f $settings_ini
-        echo 'adw-gtk3-dark'
-        return
-    end
-
-    cat $settings_ini | while read line
-        set -l split (string split '=' $line)
-        if test "$split[1]" = "gtk-theme-name"
-            echo $split[2]
-            return
-        end
-    end
-end
-
-
 set -q XDG_CONFIG_HOME && set -l config $XDG_CONFIG_HOME || set -l config $HOME/.config
 set -q XDG_CACHE_HOME && set -l cache $XDG_CACHE_HOME || set -l cache $HOME/.cache
 test -f $cache/caelestia/scheme/current.txt && set -l scheme (cat $cache/caelestia/scheme/current.txt)
