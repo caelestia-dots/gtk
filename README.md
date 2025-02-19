@@ -14,10 +14,5 @@ then run `caelestia install gtk`.
 
 ## Usage
 
-Control the colour scheme through the [main control script](https://github.com/caelestia-dots/scripts) for my dotfiles.
-
-E.g.
-
-```sh
-caelestia scheme dynamic
-```
+If using `systemd`, the service will be installed and enabled automatically.
+Otherwise, autostart `$XDG_CONFIG_HOME/caelestia/gtk/monitor/inotifywait.fish`.

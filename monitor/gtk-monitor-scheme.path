@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync GTK and caelestia schemes
+
+[Path]
+PathModified=%C/caelestia/scheme/current.txt
+Unit=gtk-monitor-scheme.service
+
+[Install]
+WantedBy=default.target
