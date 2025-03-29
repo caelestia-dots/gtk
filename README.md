@@ -15,4 +15,4 @@ then run `caelestia install gtk`.
 ## Usage
 
 If using `systemd`, the service will be installed and enabled automatically.
-Otherwise, autostart `$XDG_CONFIG_HOME/caelestia/gtk/monitor/inotifywait.fish`.
+Otherwise, autostart `$XDG_DATA_HOME/caelestia/gtk/monitor/inotifywait.fish`.
